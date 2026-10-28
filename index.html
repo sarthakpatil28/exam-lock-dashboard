@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXAMLOCK | Security Command Center</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f5f7fb;color:#182230;font-family:Arial,sans-serif}
+header{background:#fff;border-bottom:1px solid #e4e8ef;padding:22px 6%;display:flex;justify-content:space-between;align-items:center;gap:12px}
+h1{font-size:25px;margin:0} header p{color:#718096;margin:6px 0 0}
+main{max-width:1200px;margin:30px auto;padding:0 22px}
+.badge{background:#e0f2fe;color:#075985;padding:8px 12px;border-radius:20px;font-size:12px;font-weight:bold}
+h2{font-size:18px;margin:28px 0 15px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:white;padding:22px;border:1px solid #e5eaf1;border-radius:14px;box-shadow:0 3px 12px #15294b08}
+.label{color:#697586;font-size:13px}.value{font-size:23px;font-weight:bold;margin:12px 0}
+.sub{font-size:12px;color:#718096}
+.bar{height:8px;background:#e8edf4;border-radius:10px;overflow:hidden;margin:14px 0}
+.bar div{height:100%;width:0;background:#16865c;transition:width .4s}
+.layout{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+.event{padding:14px 0;border-bottom:1px solid #edf0f5;display:flex;justify-content:space-between;gap:12px;font-size:14px}
+.status{font-size:11px;font-weight:bold;padding:5px 8px;border-radius:12px;background:#dcfce7;color:#166534;height:max-content}
+.warn{background:#fef3c7;color:#92400e}.pending{background:#edf0f5;color:#596579}
+button{border:0;border-radius:8px;background:#175cd3;color:white;padding:11px 15px;font-weight:bold;cursor:pointer}
+button.secondary{background:#e8eef8;color:#24446f}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.result{line-height:1.9;font-size:14px}
+footer{text-align:center;color:#8993a2;padding:30px;font-size:12px}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}}
+@media(max-width:450px){.grid{grid-template-columns:1fr}header{padding:18px;flex-wrap:wrap}main{padding:0 14px}}
+</style>
+</head>
+<body>
+<header>
+  <div><h1>EXAMLOCK</h1><p>Zero-Trust Exam Security Command Center</p></div>
+  <span class="badge">SIMULATION MODE</span>
+</header>
+<main>
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+    <div><h2 style="margin-top:0">Examination Overview</h2>
+    <div class="sub">Centre C00102 · Demonstration environment</div></div>
+    <div class="actions">
+      <button onclick="runDemo()">Run demo scenario</button>
+      <button class="secondary" onclick="resetDemo()">Reset</button>
+    </div>
+  </div>
+  <section class="grid">
+    <div class="card"><div class="label">Encrypted bundle</div><div class="value" id="bundle">Secured</div><div class="sub">Simulated status</div></div>
+    <div class="card"><div class="label">Release status</div><div class="value" id="release">Waiting</div><div class="sub" id="clock">Awaiting simulated release</div></div>
+    <div class="card"><div class="label">Printing progress</div><div class="value" id="progress">0 / 120</div><div class="bar"><div id="bar"></div></div><div class="sub" id="printstatus">Not started</div></div>
+    <div class="card"><div class="label">Forensic investigation</div><div class="value" id="trace">Pending</div><div class="sub">Simulated result</div></div>
+  </section>
+  <section class="layout">
+    <div class="card">
+      <h2 style="margin-top:0">Exam Event Timeline</h2>
+      <div id="timeline"><div class="event"><span>Bundle created</span><span class="status">READY</span></div><div class="event"><span>Key ceremony</span><span class="status">READY</span></div><div class="event"><span>Timed release</span><span class="status pending">WAITING</span></div><div class="event"><span>QR hand-off and node scan</span><span class="status pending">WAITING</span></div><div class="event"><span>Printing and recovery</span><span class="status pending">WAITING</span></div><div class="event"><span>Leak investigation</span><span class="status pending">WAITING</span></div></div>
+    </div>
+    <div class="card">
+      <h2 style="margin-top:0">Forensic Trace Result</h2>
+      <div class="result">
+        <div>Centre: <strong id="centre">—</strong></div>
+        <div>Series: <strong id="series">—</strong></div>
+        <div>Booklet serial: <strong id="serial">—</strong></div>
+        <div>Seat / Room: <strong id="seat">—</strong></div>
+        <div>Confidence: <strong id="confidence">—</strong></div>
+        <div>Matching layers: <strong id="layers">—</strong></div>
+      </div>
+      <p class="sub" id="disclaimer">A trace is an investigative lead, not proof of who leaked the paper.</p>
+    </div>
+  </section>
+  <p class="sub" style="margin-top:20px">All information is simulated. No live cryptographic, printing or forensic system is connected.</p>
+</main>
+<footer>EXAMLOCK · Person 5 · Demo Dashboard</footer>
+<script>
+function runDemo(){
+ const stages=[
+  ["Bundle created","READY"],["Key ceremony","READY"],["Timed release","READY"],
+  ["QR hand-off and node scan","READY"],["Printing and recovery","WARNING"],["Leak investigation","READY"]
+ ];
+ document.getElementById("timeline").innerHTML=stages.map((s,i)=>`<div class="event"><span>${s[0]}</span><span class="status ${i===4?"warn":""}">${s[1]}</span></div>`).join("");
+ document.getElementById("release").textContent="Released";
+ document.getElementById("clock").textContent="Simulated release completed";
+ document.getElementById("progress").textContent="120 / 120";
+ document.getElementById("bar").style.width="100%";
+ document.getElementById("printstatus").textContent="Completed; simulated jam recovery";
+ document.getElementById("trace").textContent="Match found";
+ document.getElementById("centre").textContent="C00102";
+ document.getElementById("series").textContent="B";
+ document.getElementById("serial").textContent="BK-00102-0042";
+ document.getElementById("seat").textContent="Seat 24 / Room 2";
+ document.getElementById("confidence").textContent="Demo value: 94%";
+ document.getElementById("layers").textContent="Page code, content, typography";
+ document.getElementById("disclaimer").textContent="Illustrative values only; no measured accuracy is claimed.";
+}
+function resetDemo(){location.reload()}
+</script>
+</body>
+</html>
