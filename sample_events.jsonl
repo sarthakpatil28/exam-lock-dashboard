@@ -1,0 +1,13 @@
+
+{"time":"2026-10-28T09:00:00","stage":"bundle_created","center_id":"CTR-042","status":"ok","details":"Encrypted exam bundle created (simulated)"}
+{"time":"2026-10-28T09:01:00","stage":"key_ceremony","center_id":"CTR-042","status":"ok","details":"Three key shares verified for the demo"}
+{"time":"2026-10-28T09:02:00","stage":"waiting","center_id":"CTR-042","status":"ok","details":"Awaiting authorized release time"}
+{"time":"2026-10-28T09:05:00","stage":"release","center_id":"CTR-042","status":"ok","details":"Scheduled release triggered in simulation"}
+{"time":"2026-10-28T09:05:10","stage":"qr_shown","center_id":"CTR-042","status":"ok","details":"Release QR displayed"}
+{"time":"2026-10-28T09:05:30","stage":"node_scanned","center_id":"CTR-042","status":"ok","details":"Authorized print node verified"}
+{"time":"2026-10-28T09:06:00","stage":"printing","center_id":"CTR-042","status":"ok","details":"Printing started"}
+{"time":"2026-10-28T09:07:00","stage":"jam","center_id":"CTR-042","status":"warning","details":"Simulated printer jam detected"}
+{"time":"2026-10-28T09:08:00","stage":"resumed","center_id":"CTR-042","status":"ok","details":"Printing resumed after simulated recovery"}
+{"time":"2026-10-28T09:10:00","stage":"complete","center_id":"CTR-042","status":"ok","details":"Printing completed in simulation"}
+{"time":"2026-10-28T09:15:00","stage":"leak_received","center_id":"CTR-042","status":"warning","details":"Simulated leaked paper image received"}
+{"time":"2026-10-28T09:16:00","stage":"trace_result","center_id":"CTR-042","status":"ok","details":"Demo fingerprint matched to the configured sample variant; not a validated forensic result"}
