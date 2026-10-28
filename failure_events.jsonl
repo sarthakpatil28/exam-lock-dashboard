@@ -1,0 +1,10 @@
+
+{"time":"2026-10-28T10:00:00","stage":"bundle_created","center_id":"CTR-042","status":"ok","details":"Demo exam bundle prepared"}
+{"time":"2026-10-28T10:01:00","stage":"key_ceremony","center_id":"CTR-042","status":"ok","details":"Three key shares recorded for simulation"}
+{"time":"2026-10-28T10:05:00","stage":"release","center_id":"CTR-042","status":"ok","details":"Scheduled release recorded"}
+{"time":"2026-10-28T10:05:20","stage":"node_scanned","center_id":"CTR-042","status":"error","details":"Unauthorized print node rejected by simulated verification"}
+{"time":"2026-10-28T10:05:30","stage":"node_scanned","center_id":"CTR-042","status":"ok","details":"Authorized backup print node verified in simulation"}
+{"time":"2026-10-28T10:06:00","stage":"printing","center_id":"CTR-042","status":"ok","details":"Printing started on backup node"}
+{"time":"2026-10-28T10:07:00","stage":"jam","center_id":"CTR-042","status":"warning","details":"Simulated printer jam detected"}
+{"time":"2026-10-28T10:08:00","stage":"resumed","center_id":"CTR-042","status":"ok","details":"Printing resumed after simulated recovery"}
+{"time":"2026-10-28T10:10:00","stage":"complete","center_id":"CTR-042","status":"ok","details":"Failure recovery scenario completed"}
