@@ -1,0 +1,1463 @@
+{
+  "title": "EXAMLOCK Mock Paper",
+  "language_pair": [
+    "English",
+    "Marathi"
+  ],
+  "version": "draft-1",
+  "status": "DRAFT_FOR_HUMAN_MARATHI_REVIEW",
+  "total_questions": 40,
+  "parameterizable_question_count": 14,
+  "parameterizable_fraction": 0.35,
+  "instructions": {
+    "en": "Choose one answer for each question. Each question carries one mark. This is fictional demonstration material, not an official examination.",
+    "mr": "प्रत्येक प्रश्नासाठी एक योग्य पर्याय निवडा. प्रत्येक प्रश्नाला एक गुण आहे. हे केवळ प्रात्यक्षिकासाठी तयार केलेले काल्पनिक प्रश्नपत्रक आहे; अधिकृत परीक्षा नाही."
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "topic": "science",
+      "parameterizable": false,
+      "en": "Which planet is known as the Red Planet?",
+      "mr": "लाल ग्रह म्हणून कोणत्या ग्रहाला ओळखले जाते?",
+      "options": [
+        [
+          "A",
+          "Venus",
+          "शुक्र"
+        ],
+        [
+          "B",
+          "Mars",
+          "मंगळ"
+        ],
+        [
+          "C",
+          "Jupiter",
+          "गुरू"
+        ],
+        [
+          "D",
+          "Mercury",
+          "बुध"
+        ]
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "Q02",
+      "topic": "science",
+      "parameterizable": false,
+      "en": "What is the chemical formula of water?",
+      "mr": "पाण्याचे रासायनिक सूत्र काय आहे?",
+      "options": [
+        [
+          "A",
+          "CO₂",
+          "CO₂"
+        ],
+        [
+          "B",
+          "O₂",
+          "O₂"
+        ],
+        [
+          "C",
+          "H₂O",
+          "H₂O"
+        ],
+        [
+          "D",
+          "NaCl",
+          "NaCl"
+        ]
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "Q03",
+      "topic": "geography",
+      "parameterizable": false,
+      "en": "Which is the largest ocean on Earth?",
+      "mr": "पृथ्वीवरील सर्वात मोठा महासागर कोणता आहे?",
+      "options": [
+        [
+          "A",
+          "Atlantic Ocean",
+          "अटलांटिक महासागर"
+        ],
+        [
+          "B",
+          "Indian Ocean",
+          "हिंदी महासागर"
+        ],
+        [
+          "C",
+          "Arctic Ocean",
+          "आर्क्टिक महासागर"
+        ],
+        [
+          "D",
+          "Pacific Ocean",
+          "प्रशांत महासागर"
+        ]
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "Q04",
+      "topic": "mathematics",
+      "parameterizable": true,
+      "en": "What is {percent}% of {number}?",
+      "mr": "{number} च्या {percent}% किती आहेत?",
+      "parameters": {
+        "percent": [
+          10,
+          15,
+          20,
+          25
+        ],
+        "number": [
+          80,
+          120,
+          200,
+          240
+        ]
+      },
+      "options": [
+        [
+          "A",
+          "{wrong1}",
+          "{wrong1}"
+        ],
+        [
+          "B",
+          "{answer}",
+          "{answer}"
+        ],
+        [
+          "C",
+          "{wrong2}",
+          "{wrong2}"
+        ],
+        [
+          "D",
+          "{wrong3}",
+          "{wrong3}"
+        ]
+      ],
+      "answer": "B",
+      "note": "Template requires a generator to calculate answer and distractors; fixed options are placeholders."
+    },
+    {
+      "id": "Q05",
+      "topic": "science",
+      "parameterizable": false,
+      "en": "Which gas do plants absorb during photosynthesis?",
+      "mr": "प्रकाशसंश्लेषणाच्या वेळी वनस्पती कोणता वायू शोषून घेतात?",
+      "options": [
+        [
+          "A",
+          "Oxygen",
+          "ऑक्सिजन"
+        ],
+        [
+          "B",
+          "Carbon dioxide",
+          "कार्बन डायऑक्साइड"
+        ],
+        [
+          "C",
+          "Nitrogen",
+          "नायट्रोजन"
+        ],
+        [
+          "D",
+          "Hydrogen",
+          "हायड्रोजन"
+        ]
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "Q06",
+      "topic": "mathematics",
+      "parameterizable": true,
+      "en": "A train travels {distance} km in {hours} hours. What is its average speed?",
+      "mr": "एक रेल्वे {hours} तासांत {distance} किमी प्रवास करते. तिचा सरासरी वेग किती?",
+      "parameters": {
+        "distance": [
+          90,
+          120,
+          150,
+          180
+        ],
+        "hours": [
+          2,
+          3,
+          5,
+          6
+        ]
+      },
+      "options": [
+        [
+          "A",
+          "{wrong1} km/h",
+          "{wrong1} किमी/तास"
+        ],
+        [
+          "B",
+          "{answer} km/h",
+          "{answer} किमी/तास"
+        ],
+        [
+          "C",
+          "{wrong2} km/h",
+          "{wrong2} किमी/तास"
+        ],
+        [
+          "D",
+          "{wrong3} km/h",
+          "{wrong3} किमी/तास"
+        ]
+      ],
+      "answer": "B",
+      "note": "Template requires generator to select compatible distance-hours pairs and calculate distractors."
+    },
+    {
+      "id": "Q07",
+      "topic": "civics",
+      "parameterizable": false,
+      "en": "What is the capital of India?",
+      "mr": "भारताची राजधानी कोणती आहे?",
+      "options": [
+        [
+          "A",
+          "Mumbai",
+          "मुंबई"
+        ],
+        [
+          "B",
+          "New Delhi",
+          "नवी दिल्ली"
+        ],
+        [
+          "C",
+          "Kolkata",
+          "कोलकाता"
+        ],
+        [
+          "D",
+          "Chennai",
+          "चेन्नई"
+        ]
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "Q08",
+      "topic": "mathematics",
+      "parameterizable": true,
+      "en": "What is the square root of {number}?",
+      "mr": "{number} चे वर्गमूळ किती आहे?",
+      "parameters": {
+        "number": [
+          64,
+          81,
+          100,
+          144
+        ]
+      },
+      "options": [
+        [
+          "A",
+          "{wrong1}",
+          "{wrong1}"
+        ],
+        [
+          "B",
+          "{answer}",
+          "{answer}"
+        ],
+        [
+          "C",
+          "{wrong2}",
+          "{wrong2}"
+        ],
+        [
+          "D",
+          "{wrong3}",
+          "{wrong3}"
+        ]
+      ],
+      "answer": "B",
+      "note": "Template requires generator to calculate answer and distractors."
+    },
+    {
+      "id": "Q09",
+      "topic": "science",
+      "parameterizable": false,
+      "en": "Which organ pumps blood through the human body?",
+      "mr": "मानवी शरीरात रक्त पंप करणारा अवयव कोणता आहे?",
+      "options": [
+        [
+          "A",
+          "Lungs",
+          "फुफ्फुसे"
+        ],
+        [
+          "B",
+          "Liver",
+          "यकृत"
+        ],
+        [
+          "C",
+          "Heart",
+          "हृदय"
+        ],
+        [
+          "D",
+          "Kidneys",
+          "मूत्रपिंडे"
+        ]
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "Q10",
+      "topic": "mathematics",
+      "parameterizable": true,
+      "en": "A product costs ₹{price}. It has a {discount}% discount. What is the sale price?",
+      "mr": "एका वस्तूची किंमत ₹{price} आहे. त्यावर {discount}% सूट आहे. सूटीनंतरची किंमत किती?",
+      "parameters": {
+        "price": [
+          100,
+          250,
+          400,
+          800
+        ],
+        "discount": [
+          10,
+          20,
+          25,
+          30
+        ]
+      },
+      "options": [
+        [
+          "A",
+          "₹{wrong1}",
+          "₹{wrong1}"
+        ],
+        [
+          "B",
+          "₹{answer}",
+          "₹{answer}"
+        ],
+        [
+          "C",
+          "₹{wrong2}",
+          "₹{wrong2}"
+        ],
+        [
+          "D",
+          "₹{wrong3}",
+          "₹{wrong3}"
+        ]
+      ],
+      "answer": "B",
+      "note": "Template requires generator to calculate answer and distractors."
+    },
+    {
+      "id": "Q11",
+      "topic": "computer",
+      "parameterizable": false,
+      "en": "Which component is commonly called the brain of a computer?",
+      "mr": "संगणकाचा मेंदू म्हणून सामान्यतः कोणत्या घटकाला ओळखले जाते?",
+      "options": [
+        [
+          "A",
+          "CPU",
+          "CPU"
+        ],
+        [
+          "B",
+          "Monitor",
+          "मॉनिटर"
+        ],
+        [
+          "C",
+          "Keyboard",
+          "कीबोर्ड"
+        ],
+        [
+          "D",
+          "Mouse",
+          "माऊस"
+        ]
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "Q12",
+      "topic": "mathematics",
+      "parameterizable": true,
+      "en": "If {a} + x = {total}, what is x?",
+      "mr": "{a} + x = {total} असल्यास x ची किंमत किती?",
+      "parameters": {
+        "a": [
+          4,
+          7,
+          9,
+          12
+        ],
+        "total": [
+          15,
+          20,
+          25,
+          30
+        ]
+      },
+      "options": [
+        [
+          "A",
+          "{wrong1}",
+          "{wrong1}"
+        ],
+        [
+          "B",
+          "{answer}",
+          "{answer}"
+        ],
+        [
+          "C",
+          "{wrong2}",
+          "{wrong2}"
+        ],
+        [
+          "D",
+          "{wrong3}",
+          "{wrong3}"
+        ]
+      ],
+      "answer": "B",
+      "note": "Template requires generator to ensure total > a and calculate distractors."
+    },
+    {
+      "id": "Q13",
+      "topic": "energy",
+      "parameterizable": false,
+      "en": "Which of these is a renewable energy source?",
+      "mr": "खालीलपैकी कोणता नवीकरणीय ऊर्जा स्रोत आहे?",
+      "options": [
+        [
+          "A",
+          "Coal",
+          "कोळसा"
+        ],
+        [
+          "B",
+          "Petrol",
+          "पेट्रोल"
+        ],
+        [
+          "C",
+          "Solar energy",
+          "सौर ऊर्जा"
+        ],
+        [
+          "D",
+          "Natural gas",
+          "नैसर्गिक वायू"
+        ]
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "Q14",
+      "topic": "mathematics",
+      "parameterizable": true,
+      "en": "What is the perimeter of a square with side {side} cm?",
+      "mr": "{side} सेमी बाजू असलेल्या चौरसाचा परिमिती किती?",
+      "parameters": {
+        "side": [
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      "options": [
+        [
+          "A",
+          "{wrong1} cm",
+          "{wrong1} सेमी"
+        ],
+        [
+          "B",
+          "{answer} cm",
+          "{answer} सेमी"
+        ],
+        [
+          "C",
+          "{wrong2} cm",
+          "{wrong2} सेमी"
+        ],
+        [
+          "D",
+          "{wrong3} cm",
+          "{wrong3} सेमी"
+        ]
+      ],
+      "answer": "B",
+      "note": "Template requires generator to calculate answer and distractors."
+    },
+    {
+      "id": "Q15",
+      "topic": "biology",
+      "parameterizable": false,
+      "en": "Which blood cells primarily carry oxygen?",
+      "mr": "मुख्यतः कोणत्या रक्तपेशी ऑक्सिजन वाहून नेतात?",
+      "options": [
+        [
+          "A",
+          "White blood cells",
+          "पांढऱ्या रक्तपेशी"
+        ],
+        [
+          "B",
+          "Red blood cells",
+          "लाल रक्तपेशी"
+        ],
+        [
+          "C",
+          "Platelets",
+          "रक्तपट्टिका"
+        ],
+        [
+          "D",
+          "Plasma",
+          "प्लाझ्मा"
+        ]
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "Q16",
+      "topic": "mathematics",
+      "parameterizable": true,
+      "en": "Three notebooks cost ₹{cost3}. What is the cost of {count} notebooks at the same rate?",
+      "mr": "३ वह्यांची किंमत ₹{cost3} आहे. त्याच दराने {count} वह्यांची किंमत किती?",
+      "parameters": {
+        "cost3": [
+          30,
+          45,
+          60,
+          75
+        ],
+        "count": [
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "options": [
+        [
+          "A",
+          "₹{wrong1}",
+          "₹{wrong1}"
+        ],
+        [
+          "B",
+          "₹{answer}",
+          "₹{answer}"
+        ],
+        [
+          "C",
+          "₹{wrong2}",
+          "₹{wrong2}"
+        ],
+        [
+          "D",
+          "₹{wrong3}",
+          "₹{wrong3}"
+        ]
+      ],
+      "answer": "B",
+      "note": "Template requires generator to calculate unit price and distractors."
+    },
+    {
+      "id": "Q17",
+      "topic": "geography",
+      "parameterizable": false,
+      "en": "The Sahara Desert is primarily located on which continent?",
+      "mr": "सहारा वाळवंट मुख्यतः कोणत्या खंडात आहे?",
+      "options": [
+        [
+          "A",
+          "Asia",
+          "आशिया"
+        ],
+        [
+          "B",
+          "Africa",
+          "आफ्रिका"
+        ],
+        [
+          "C",
+          "Australia",
+          "ऑस्ट्रेलिया"
+        ],
+        [
+          "D",
+          "Europe",
+          "युरोप"
+        ]
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "Q18",
+      "topic": "computer",
+      "parameterizable": false,
+      "en": "Which data structure follows FIFO order?",
+      "mr": "कोणती डेटा संरचना FIFO (आधी आलेले आधी बाहेर) नियम पाळते?",
+      "options": [
+        [
+          "A",
+          "Stack",
+          "स्टॅक"
+        ],
+        [
+          "B",
+          "Queue",
+          "क्यू"
+        ],
+        [
+          "C",
+          "Tree",
+          "ट्री"
+        ],
+        [
+          "D",
+          "Graph",
+          "ग्राफ"
+        ]
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "Q19",
+      "topic": "mathematics",
+      "parameterizable": true,
+      "en": "A car travels at {speed} km/h for {time} hours. How far does it travel?",
+      "mr": "एक कार {speed} किमी/तास वेगाने {time} तास प्रवास करते. ती किती अंतर पार करते?",
+      "parameters": {
+        "speed": [
+          30,
+          40,
+          50,
+          60
+        ],
+        "time": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "options": [
+        [
+          "A",
+          "{wrong1} km",
+          "{wrong1} किमी"
+        ],
+        [
+          "B",
+          "{answer} km",
+          "{answer} किमी"
+        ],
+        [
+          "C",
+          "{wrong2} km",
+          "{wrong2} किमी"
+        ],
+        [
+          "D",
+          "{wrong3} km",
+          "{wrong3} किमी"
+        ]
+      ],
+      "answer": "B",
+      "note": "Template requires generator to calculate answer and distractors."
+    },
+    {
+      "id": "Q20",
+      "topic": "science",
+      "parameterizable": false,
+      "en": "Which instrument is used to measure temperature?",
+      "mr": "तापमान मोजण्यासाठी कोणते उपकरण वापरले जाते?",
+      "options": [
+        [
+          "A",
+          "Barometer",
+          "वायुदाबमापक"
+        ],
+        [
+          "B",
+          "Thermometer",
+          "तापमापक"
+        ],
+        [
+          "C",
+          "Ammeter",
+          "विद्युतप्रवाहमापक"
+        ],
+        [
+          "D",
+          "Hygrometer",
+          "आर्द्रतामापक"
+        ]
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "Q21",
+      "topic": "mathematics",
+      "parameterizable": false,
+      "en": "What is the average of 4, 8, and 12?",
+      "mr": "4, 8 आणि 12 यांची सरासरी किती?",
+      "options": [
+        [
+          "A",
+          "6",
+          "6"
+        ],
+        [
+          "B",
+          "8",
+          "8"
+        ],
+        [
+          "C",
+          "10",
+          "10"
+        ],
+        [
+          "D",
+          "12",
+          "12"
+        ]
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "Q22",
+      "topic": "science",
+      "parameterizable": false,
+      "en": "At standard atmospheric pressure, water boils at approximately what temperature?",
+      "mr": "सामान्य वातावरणीय दाबावर पाणी साधारण कोणत्या तापमानाला उकळते?",
+      "options": [
+        [
+          "A",
+          "50°C",
+          "50°C"
+        ],
+        [
+          "B",
+          "75°C",
+          "75°C"
+        ],
+        [
+          "C",
+          "100°C",
+          "100°C"
+        ],
+        [
+          "D",
+          "125°C",
+          "125°C"
+        ]
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "Q23",
+      "topic": "mathematics",
+      "parameterizable": true,
+      "en": "A shopkeeper buys an item for ₹{cost} and sells it for ₹{selling}. What is the profit?",
+      "mr": "दुकानदाराने वस्तू ₹{cost} ला खरेदी केली आणि ₹{selling} ला विकली. नफा किती?",
+      "parameters": {
+        "cost": [
+          50,
+          80,
+          120,
+          200
+        ],
+        "selling": [
+          70,
+          100,
+          150,
+          250
+        ]
+      },
+      "options": [
+        [
+          "A",
+          "₹{wrong1}",
+          "₹{wrong1}"
+        ],
+        [
+          "B",
+          "₹{answer}",
+          "₹{answer}"
+        ],
+        [
+          "C",
+          "₹{wrong2}",
+          "₹{wrong2}"
+        ],
+        [
+          "D",
+          "₹{wrong3}",
+          "₹{wrong3}"
+        ]
+      ],
+      "answer": "B",
+      "note": "Generator must choose selling > cost and calculate distractors."
+    },
+    {
+      "id": "Q24",
+      "topic": "electrical",
+      "parameterizable": false,
+      "en": "What is the SI unit of electrical resistance?",
+      "mr": "विद्युत प्रतिरोधाचे SI एकक कोणते आहे?",
+      "options": [
+        [
+          "A",
+          "Volt",
+          "व्होल्ट"
+        ],
+        [
+          "B",
+          "Ampere",
+          "अँपिअर"
+        ],
+        [
+          "C",
+          "Ohm",
+          "ओहम"
+        ],
+        [
+          "D",
+          "Watt",
+          "वॅट"
+        ]
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "Q25",
+      "topic": "computer",
+      "parameterizable": false,
+      "en": "Which protocol is commonly used for secure web browsing?",
+      "mr": "सुरक्षित वेब ब्राउझिंगसाठी सामान्यतः कोणता प्रोटोकॉल वापरला जातो?",
+      "options": [
+        [
+          "A",
+          "HTTP only",
+          "फक्त HTTP"
+        ],
+        [
+          "B",
+          "HTTPS",
+          "HTTPS"
+        ],
+        [
+          "C",
+          "FTP only",
+          "फक्त FTP"
+        ],
+        [
+          "D",
+          "SMTP",
+          "SMTP"
+        ]
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "Q26",
+      "topic": "mathematics",
+      "parameterizable": true,
+      "en": "A number is increased from {original} to {new}. What is the increase?",
+      "mr": "एखादी संख्या {original} वरून {new} झाली. वाढ किती आहे?",
+      "parameters": {
+        "original": [
+          20,
+          35,
+          50,
+          80
+        ],
+        "new": [
+          30,
+          50,
+          75,
+          100
+        ]
+      },
+      "options": [
+        [
+          "A",
+          "{wrong1}",
+          "{wrong1}"
+        ],
+        [
+          "B",
+          "{answer}",
+          "{answer}"
+        ],
+        [
+          "C",
+          "{wrong2}",
+          "{wrong2}"
+        ],
+        [
+          "D",
+          "{wrong3}",
+          "{wrong3}"
+        ]
+      ],
+      "answer": "B",
+      "note": "Generator must choose new > original and calculate distractors."
+    },
+    {
+      "id": "Q27",
+      "topic": "biology",
+      "parameterizable": false,
+      "en": "Which vitamin can the human body produce with help from sunlight?",
+      "mr": "सूर्यप्रकाशाच्या मदतीने मानवी शरीर कोणते जीवनसत्त्व तयार करू शकते?",
+      "options": [
+        [
+          "A",
+          "Vitamin A",
+          "जीवनसत्त्व A"
+        ],
+        [
+          "B",
+          "Vitamin B12",
+          "जीवनसत्त्व B12"
+        ],
+        [
+          "C",
+          "Vitamin C",
+          "जीवनसत्त्व C"
+        ],
+        [
+          "D",
+          "Vitamin D",
+          "जीवनसत्त्व D"
+        ]
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "Q28",
+      "topic": "mathematics",
+      "parameterizable": true,
+      "en": "A rectangle has length {length} cm and width {width} cm. What is its area?",
+      "mr": "आयताची लांबी {length} सेमी आणि रुंदी {width} सेमी आहे. त्याचे क्षेत्रफळ किती?",
+      "parameters": {
+        "length": [
+          4,
+          5,
+          8,
+          10
+        ],
+        "width": [
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "options": [
+        [
+          "A",
+          "{wrong1} cm²",
+          "{wrong1} सेमी²"
+        ],
+        [
+          "B",
+          "{answer} cm²",
+          "{answer} सेमी²"
+        ],
+        [
+          "C",
+          "{wrong2} cm²",
+          "{wrong2} सेमी²"
+        ],
+        [
+          "D",
+          "{wrong3} cm²",
+          "{wrong3} सेमी²"
+        ]
+      ],
+      "answer": "B",
+      "note": "Template requires generator to calculate answer and distractors."
+    },
+    {
+      "id": "Q29",
+      "topic": "geography",
+      "parameterizable": false,
+      "en": "Which is the capital of Maharashtra?",
+      "mr": "महाराष्ट्राची राजधानी कोणती आहे?",
+      "options": [
+        [
+          "A",
+          "Pune",
+          "पुणे"
+        ],
+        [
+          "B",
+          "Nagpur",
+          "नागपूर"
+        ],
+        [
+          "C",
+          "Mumbai",
+          "मुंबई"
+        ],
+        [
+          "D",
+          "Nashik",
+          "नाशिक"
+        ]
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "Q30",
+      "topic": "mathematics",
+      "parameterizable": true,
+      "en": "If {quantity} items cost ₹{total}, what is the cost per item?",
+      "mr": "{quantity} वस्तूंची किंमत ₹{total} असल्यास, एका वस्तूची किंमत किती?",
+      "parameters": {
+        "quantity": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "total": [
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      "options": [
+        [
+          "A",
+          "₹{wrong1}",
+          "₹{wrong1}"
+        ],
+        [
+          "B",
+          "₹{answer}",
+          "₹{answer}"
+        ],
+        [
+          "C",
+          "₹{wrong2}",
+          "₹{wrong2}"
+        ],
+        [
+          "D",
+          "₹{wrong3}",
+          "₹{wrong3}"
+        ]
+      ],
+      "answer": "B",
+      "note": "Generator must pair total with quantity to produce an integer unit price."
+    },
+    {
+      "id": "Q31",
+      "topic": "science",
+      "parameterizable": false,
+      "en": "Which process changes liquid water into water vapour?",
+      "mr": "द्रवरूप पाण्याचे बाष्पात रूपांतर होण्याच्या प्रक्रियेला काय म्हणतात?",
+      "options": [
+        [
+          "A",
+          "Condensation",
+          "संघनन"
+        ],
+        [
+          "B",
+          "Freezing",
+          "गोठणे"
+        ],
+        [
+          "C",
+          "Evaporation",
+          "बाष्पीभवन"
+        ],
+        [
+          "D",
+          "Melting",
+          "वितळणे"
+        ]
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "Q32",
+      "topic": "mathematics",
+      "parameterizable": true,
+      "en": "What is {a} × {b}?",
+      "mr": "{a} × {b} किती?",
+      "parameters": {
+        "a": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "b": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "options": [
+        [
+          "A",
+          "{wrong1}",
+          "{wrong1}"
+        ],
+        [
+          "B",
+          "{answer}",
+          "{answer}"
+        ],
+        [
+          "C",
+          "{wrong2}",
+          "{wrong2}"
+        ],
+        [
+          "D",
+          "{wrong3}",
+          "{wrong3}"
+        ]
+      ],
+      "answer": "B",
+      "note": "Template requires generator to calculate answer and distractors."
+    },
+    {
+      "id": "Q33",
+      "topic": "security",
+      "parameterizable": false,
+      "en": "Which is a good password practice?",
+      "mr": "पासवर्ड वापरण्याची योग्य पद्धत कोणती आहे?",
+      "options": [
+        [
+          "A",
+          "Reuse one password everywhere",
+          "सर्वत्र एकच पासवर्ड वापरणे"
+        ],
+        [
+          "B",
+          "Use a long, unique password",
+          "लांब आणि प्रत्येक ठिकाणी वेगळा पासवर्ड वापरणे"
+        ],
+        [
+          "C",
+          "Share passwords with friends",
+          "मित्रांसोबत पासवर्ड शेअर करणे"
+        ],
+        [
+          "D",
+          "Post it publicly",
+          "तो सार्वजनिकपणे लिहिणे"
+        ]
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "Q34",
+      "topic": "mathematics",
+      "parameterizable": false,
+      "en": "If 40 items are divided equally among 5 people, how many does each person receive?",
+      "mr": "40 वस्तू 5 जणांमध्ये समान वाटल्यास प्रत्येकाला किती मिळतील?",
+      "options": [
+        [
+          "A",
+          "5",
+          "5"
+        ],
+        [
+          "B",
+          "8",
+          "8"
+        ],
+        [
+          "C",
+          "10",
+          "10"
+        ],
+        [
+          "D",
+          "20",
+          "20"
+        ]
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "Q35",
+      "topic": "science",
+      "parameterizable": false,
+      "en": "Which metal is liquid at typical room temperature?",
+      "mr": "सामान्य खोलीच्या तापमानाला कोणता धातू द्रवरूप असतो?",
+      "options": [
+        [
+          "A",
+          "Iron",
+          "लोह"
+        ],
+        [
+          "B",
+          "Aluminium",
+          "अॅल्युमिनियम"
+        ],
+        [
+          "C",
+          "Mercury",
+          "पारा"
+        ],
+        [
+          "D",
+          "Copper",
+          "तांबे"
+        ]
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "Q36",
+      "topic": "mathematics",
+      "parameterizable": true,
+      "en": "A bus travels {distance} km in {minutes} minutes. What is its speed in km/h?",
+      "mr": "एक बस {minutes} मिनिटांत {distance} किमी प्रवास करते. तिचा वेग किमी/तासात किती?",
+      "parameters": {
+        "distance": [
+          15,
+          20,
+          30,
+          40
+        ],
+        "minutes": [
+          30,
+          40,
+          60,
+          80
+        ]
+      },
+      "options": [
+        [
+          "A",
+          "{wrong1} km/h",
+          "{wrong1} किमी/तास"
+        ],
+        [
+          "B",
+          "{answer} km/h",
+          "{answer} किमी/तास"
+        ],
+        [
+          "C",
+          "{wrong2} km/h",
+          "{wrong2} किमी/तास"
+        ],
+        [
+          "D",
+          "{wrong3} km/h",
+          "{wrong3} किमी/तास"
+        ]
+      ],
+      "answer": "B",
+      "note": "Generator must choose compatible distance-time pairs and calculate distractors."
+    },
+    {
+      "id": "Q37",
+      "topic": "civics",
+      "parameterizable": false,
+      "en": "Which institution issues most currency notes in India?",
+      "mr": "भारतातील बहुतांश चलनी नोटा कोणती संस्था जारी करते?",
+      "options": [
+        [
+          "A",
+          "SEBI",
+          "सेबी"
+        ],
+        [
+          "B",
+          "Reserve Bank of India",
+          "भारतीय रिझर्व्ह बँक"
+        ],
+        [
+          "C",
+          "State Bank of India",
+          "स्टेट बँक ऑफ इंडिया"
+        ],
+        [
+          "D",
+          "NITI Aayog",
+          "नीती आयोग"
+        ]
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "Q38",
+      "topic": "mathematics",
+      "parameterizable": false,
+      "en": "A class has 15 boys and 12 girls. How many students are there in total?",
+      "mr": "एका वर्गात 15 मुले आणि 12 मुली आहेत. एकूण विद्यार्थी किती?",
+      "options": [
+        [
+          "A",
+          "25",
+          "25"
+        ],
+        [
+          "B",
+          "27",
+          "27"
+        ],
+        [
+          "C",
+          "28",
+          "28"
+        ],
+        [
+          "D",
+          "30",
+          "30"
+        ]
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "Q39",
+      "topic": "science",
+      "parameterizable": false,
+      "en": "What is the primary natural source of energy for Earth's climate system?",
+      "mr": "पृथ्वीच्या हवामान प्रणालीसाठी ऊर्जेचा मुख्य नैसर्गिक स्रोत कोणता आहे?",
+      "options": [
+        [
+          "A",
+          "Moon",
+          "चंद्र"
+        ],
+        [
+          "B",
+          "Sun",
+          "सूर्य"
+        ],
+        [
+          "C",
+          "Mars",
+          "मंगळ"
+        ],
+        [
+          "D",
+          "Earth's core",
+          "पृथ्वीचा गाभा"
+        ]
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "Q40",
+      "topic": "mathematics",
+      "parameterizable": false,
+      "en": "A ₹500 item is sold at a 10% discount. What is the discount amount?",
+      "mr": "₹500 किमतीच्या वस्तूवर 10% सूट दिली आहे. सूट किती रुपये आहे?",
+      "options": [
+        [
+          "A",
+          "₹25",
+          "₹25"
+        ],
+        [
+          "B",
+          "₹50",
+          "₹50"
+        ],
+        [
+          "C",
+          "₹100",
+          "₹100"
+        ],
+        [
+          "D",
+          "₹150",
+          "₹150"
+        ]
+      ],
+      "answer": "B"
+    }
+  ],
+  "answer_key": {
+    "Q01": "B",
+    "Q02": "C",
+    "Q03": "D",
+    "Q04": "B",
+    "Q05": "B",
+    "Q06": "B",
+    "Q07": "B",
+    "Q08": "B",
+    "Q09": "C",
+    "Q10": "B",
+    "Q11": "A",
+    "Q12": "B",
+    "Q13": "C",
+    "Q14": "B",
+    "Q15": "B",
+    "Q16": "B",
+    "Q17": "B",
+    "Q18": "B",
+    "Q19": "B",
+    "Q20": "B",
+    "Q21": "B",
+    "Q22": "C",
+    "Q23": "B",
+    "Q24": "C",
+    "Q25": "B",
+    "Q26": "B",
+    "Q27": "D",
+    "Q28": "B",
+    "Q29": "C",
+    "Q30": "B",
+    "Q31": "C",
+    "Q32": "B",
+    "Q33": "B",
+    "Q34": "B",
+    "Q35": "C",
+    "Q36": "B",
+    "Q37": "B",
+    "Q38": "B",
+    "Q39": "B",
+    "Q40": "B"
+  },
+  "review_notes": [
+    "Marathi wording is a draft and requires human review by a fluent Marathi speaker.",
+    "Parameterizable items contain templates and placeholder options; a generator must fill in values, calculate distractors, and validate answer keys before generating a candidate-ready paper.",
+    "Do not use real exam content or real candidate data."
+  ]
+}

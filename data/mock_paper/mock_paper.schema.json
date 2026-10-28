@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EXAMLOCK Mock Paper Schema",
+  "type": "object",
+  "required": [
+    "title",
+    "language_pair",
+    "version",
+    "status",
+    "total_questions",
+    "questions",
+    "answer_key"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "language_pair": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "total_questions": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "parameterizable_question_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "parameterizable_fraction": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "instructions": {
+      "type": "object",
+      "required": [
+        "en",
+        "mr"
+      ],
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "mr": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "topic",
+          "parameterizable",
+          "en",
+          "mr",
+          "options",
+          "answer"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "topic": {
+            "type": "string"
+          },
+          "parameterizable": {
+            "type": "boolean"
+          },
+          "en": {
+            "type": "string"
+          },
+          "mr": {
+            "type": "string"
+          },
+          "parameters": {
+            "type": "object"
+          },
+          "options": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "answer": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "answer_key": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    },
+    "review_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
