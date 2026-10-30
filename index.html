@@ -408,6 +408,9 @@
         <button class="btn danger" id="failureButton" onclick="loadScenario('failure')">
           ⚠ Failure & Recovery
         </button>
+        <button class="btn" id="forensicButton" onclick="loadScenario('forensic')">
+          Forensic Investigation
+        </button>
         <button class="btn" onclick="resetDashboard()">Reset</button>
       </div>
     </section>
@@ -636,7 +639,8 @@
   <script>
     const EVENT_FILES = {
       normal: "./sample_events.jsonl",
-      failure: "./failure_events.jsonl"
+      failure: "./failure_events.jsonl",
+      forensic: "./forensic_events.jsonl"
     };
 
     const LABELS = {
@@ -651,7 +655,14 @@
       resumed: "Printing resumed",
       complete: "Printing completed",
       leak_received: "Leak report received",
-      trace_result: "Forensic trace result"
+      trace_result: "Forensic trace result",
+      evidence_analyzed: "Forensic evidence analyzed",
+      center_identified: "Center candidate identified",
+      investigation_abstained: "Safe abstention",
+      series_identified: "Series identified",
+      booklet_identified: "Booklet candidate identified",
+      tampering_detected: "Option-tampering result",
+      seating_verified: "Controlled roster comparison"
     };
 
     let currentEvents = [];
@@ -752,7 +763,9 @@
         currentEvents.length + " chronological event" +
         (currentEvents.length === 1 ? "" : "s");
       $("eventCount").textContent = currentEvents.length;
-      $("eventSub").textContent = "Records in the selected sample log";
+      $("eventSub").textContent = currentScenario === "forensic"
+        ? "Recorded events from calibrated synthetic forensic run"
+        : "Records in the selected sample log";
     }
 
     function renderDashboard() {
@@ -761,7 +774,9 @@
       const warnings = events.filter(e => e.status === "warning").length;
 
       $("scenarioName").textContent =
-        currentScenario === "normal" ? "Normal workflow" : "Failure & recovery";
+        currentScenario === "normal" ? "Normal workflow" :
+        currentScenario === "forensic" ? "Forensic investigation" :
+        "Failure & recovery";
 
       $("bundleValue").textContent = hasStage("bundle_created") ? "Created" : "Pending";
       $("bundleSub").textContent = hasStage("bundle_created")
@@ -827,7 +842,9 @@
 
       if (trace) {
         setPill("tracePill", "RESULT RECORDED", "warn");
-        $("traceHeading").textContent = "Trace event found in sample log";
+        $("traceHeading").textContent = currentScenario === "forensic"
+          ? "Result from calibrated synthetic forensic run"
+          : "Trace event found in sample log";
         $("traceDetails").textContent = trace.details ||
           "A trace-result event was logged; no independent forensic verification was performed.";
       } else if (leak) {
@@ -849,7 +866,8 @@
     }
 
     async function loadScenario(scenario) {
-      const button = scenario === "normal" ? $("normalButton") : $("failureButton");
+      const button = scenario === "normal" ? $("normalButton") :
+        scenario === "failure" ? $("failureButton") : $("forensicButton");
       const originalText = button.textContent;
       button.disabled = true;
       button.textContent = "Loading...";
@@ -876,7 +894,9 @@
         renderDashboard();
 
         showToast(
-          (scenario === "normal" ? "Normal workflow" : "Failure and recovery") +
+          (scenario === "normal" ? "Normal workflow" :
+           scenario === "forensic" ? "Forensic investigation" :
+           "Failure and recovery") +
           " loaded: " + parsed.length + " simulated events."
         );
       } catch (error) {
